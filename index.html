@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel da lâmpada</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main class="painel">
+    <header class="cabecalho">
+      <span class="marca">PROJETO ADS</span>
+      <h1>Painel de iluminação</h1>
+      <p class="descricao">HTML, CSS e JavaScript em prática.</p>
+    </header>
+
+    <!-- Ilustração da lâmpada feita com elementos HTML e CSS -->
+    <div class="area-lampada">
+      <div id="lampada" class="lampada" aria-label="Lâmpada apagada">
+        <div class="fio"></div>
+        <div class="vidro">
+          <div class="brilho"></div>
+        </div>
+        <div class="base">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="controles">
+      <button id="interruptor" type="button">Ligar</button>
+      <p id="aviso" aria-live="polite">Luz apagada. Clique para acender.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
